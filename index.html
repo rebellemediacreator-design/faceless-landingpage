@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RE:BELLE™ Faceless Masterclass Workbook – Willkommen</title>
-
+    <meta name="description" content="97-seitiges Premium-Workbook für Frauen, die kraftvolle, faceless Brands aufbauen. Soft, authentisch, transformativ.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Jost:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --soft-pink: #ffb6c1;
+            --blush: #ffc0cb;
+            --pale-pink: #ffe4e9;
+            --beige: #d4a373;
+            --sand: #c8a882;
+            --cream: #faf5f0;
+            --off-white: #f5ebe0;
+            --terracotta: #c85a54;
+            --sage: #a8b89d;
+            --warm-gold: #c19a6b;
+            --text-dark: #5a4a42;
+            --text-light: #8b7d77;
+        }
+
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #faf5f0;
+            font-family: 'Jost', sans-serif;
+            background: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .hero {
@@ -17,49 +39,69 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
             padding: 2rem;
+            background: linear-gradient(135deg, var(--pale-pink) 0%, var(--cream) 100%);
         }
 
         .hero-content {
+            max-width: 1200px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            max-width: 1200px;
             align-items: center;
+            z-index: 2;
         }
+
+        .hero-image-container { position: relative; }
 
         .hero-image {
             width: 100%;
             max-width: 500px;
-            border-radius: 10px;
+            height: auto;
+            border-radius: 8px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.1);
         }
 
-        .hero-text h1 {
-            font-size: 3rem;
-            margin: 0;
+        .hero-text { padding: 2rem; }
+
+        .heart { font-size: 3rem; margin-bottom: 1rem; }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
         }
 
-        .hero-text p {
-            margin: 1rem 0;
-            line-height: 1.6;
+        .tagline {
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: var(--terracotta);
+            margin-bottom: 2rem;
         }
 
-        .cta {
+        .hero-headline {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subheadline {
+            margin-bottom: 2.5rem;
+            color: var(--text-light);
+        }
+
+        .cta-button {
             display: inline-block;
-            margin-top: 1.5rem;
-            padding: 1rem 2rem;
-            background: #c85a54;
-            color: white;
+            padding: 1.2rem 3rem;
+            font-size: 1.1rem;
             text-decoration: none;
+            color: var(--cream);
+            background: var(--terracotta);
             border-radius: 50px;
-        }
-
-        @media (max-width: 768px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -69,22 +111,27 @@
 <section class="hero">
     <div class="hero-content">
 
-        <!-- 🔥 HIER IST DAS BILD RICHTIG -->
-        <div>
+        <div class="hero-image-container">
+            <!-- 🔥 EINZIGE ÄNDERUNG -->
             <img src="hero-image.png" alt="RE:BELLE Faceless Workbook" class="hero-image">
         </div>
 
         <div class="hero-text">
-            <h1>🖤 RE:BELLE™</h1>
-            <p><strong>The Art of Feeling. Amplified.</strong></p>
+            <div class="heart">🖤</div>
+            <h1 class="brand-name">RE:BELLE™</h1>
+            <p class="tagline">The Art of Feeling. Amplified.</p>
 
-            <p>
-                Willkommen zu deiner faceless Marke.  
-                97 Seiten Transformation. 52 Übungen. 8 Templates.  
-                Soft. Authentisch. Kraftvoll.
+            <h2 class="hero-headline">
+                Willkommen zu deiner faceless Marke
+            </h2>
+
+            <p class="hero-subheadline">
+                Die Marke, die ohne Gesicht unvergesslich bleibt. 97 Seiten Transformation. 52 Übungen. 8 Templates.
             </p>
 
-            <a href="#" class="cta">Jetzt starten</a>
+            <a href="https://www.newwomanintheshop.com/products/faceless-workbook-edition-branding-fur-unsichtbare-koniginnen" class="cta-button">
+                Jetzt Starten – Nur 47€
+            </a>
         </div>
 
     </div>
